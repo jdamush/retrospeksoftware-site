@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RetroSpek — Support</title>
+  <meta name="description" content="RetroSpek support: contact, troubleshooting, and subscription help." />
+
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: rgba(23,26,33,0.88);
+      --text: #ffffff;
+      --muted: #9aa0aa;
+      --accent: #ff7a18;
+      --border: rgba(255,255,255,0.12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: 980px; margin: 0 auto; padding: 48px 20px 70px; }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 26px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo { height: 34px; }
+    .title { margin: 0; font-size: 1.2rem; letter-spacing: 0.01em; }
+    .muted { color: var(--muted); }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      margin: 18px 0;
+    }
+
+    h1 { margin: 0 0 10px; font-size: 2rem; }
+    h2 { margin: 0 0 12px; font-size: 1.2rem; }
+    p { margin: 10px 0; }
+
+    ul { margin: 10px 0 0 18px; }
+    li { margin: 6px 0; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      margin-top: 46px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    code {
+      background: rgba(255,255,255,0.06);
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="topbar">
+      <div class="brand">
+        <a href="index.html" aria-label="Home">
+          <img src="assets/logo.svg" alt="RetroSpek" class="logo" />
+        </a>
+        <p class="title">Support</p>
+        <span class="pill">RetroSpek</span>
+      </div>
+
+      <div class="muted">
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+
+    <h1>How can we help?</h1>
+    <p class="muted">
+      If you have questions, found a bug, or want to suggest an improvement, send us a note.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:support@retrospeksoftware.com">support@retrospeksoftware.com</a>
+        </p>
+        <p class="muted">
+          Include your device model, iOS/watchOS version, and what you expected to happen.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Common questions</h2>
+        <ul>
+          <li><strong>Where are my videos saved?</strong> In your Photos library (unless you choose otherwise in the app).</li>
+          <li><strong>Does RetroSpek record audio?</strong> If enabled and permitted, yes. You can disable microphone access in iOS Settings.</li>
+          <li><strong>Does it work with Apple Watch?</strong> Yes—if the Watch companion app is installed and paired.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li><strong>Camera won’t start:</strong> Check iOS permissions at <code>Settings → Privacy & Security → Camera</code>.</li>
+        <li><strong>No audio:</strong> Confirm microphone permission at <code>Settings → Privacy & Security → Microphone</code>.</li>
+        <li><strong>Videos not saving:</strong> Ensure Photos access is allowed at <code>Settings → Privacy & Security → Photos</code>.</li>
+        <li><strong>Apple Watch control not working:</strong> Make sure Bluetooth is on, the watch is paired, and both apps are up to date.</li>
+      </ul>
+      <p class="muted">
+        Tip: A quick phone restart fixes a surprising number of camera/permission edge cases.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Subscriptions & billing</h2>
+      <ul>
+        <li><strong>Manage or cancel:</strong> iPhone <code>Settings → Apple ID → Subscriptions</code></li>
+        <li><strong>Restore purchases:</strong> Use the “Restore Purchases” option inside the app (if available).</li>
+        <li><strong>Billing questions:</strong> Subscriptions are billed by Apple via your Apple ID.</li>
+      </ul>
+      <p class="muted">
+        If something looks wrong with your entitlement, email support and include the Apple ID email you used (or just tell us you’re not sure).
+      </p>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> RetroSpek Software</div>
+      <div>
+        <a href="index.html">Home</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a> ·
+        <a href="mailto:support@retrospeksoftware.com">Email Support</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
